@@ -1,0 +1,100 @@
+
+.images{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couche sombre pour améliorer la visibilité */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Aligne le bouton en bas */;
+  button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+  }
+}
+    .button-left{
+    bottom: 20px;
+    left: 20px;
+    }
+    .button-right{
+    bottom: 20px;
+    right: 20px;
+    }
+
+  .image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Assure que l'image s'adapte bien à l'écran */
+  }
+
+.Input-text-original {
+  text-align: center;
+  border-radius: 10px;
+  font-family: Arial, sans-serif; /* Utilisez une police typique */
+  font-size: 16px; /* Taille de police standard */
+  opacity: 0.5; /* Arrière-plan blanc pour contraster avec le texte */
+  border: 1px solid #ccc; /* Border légère pour délimiter l'input */
+  padding: 10px; /* Espacement intérieur pour améliorer la lisibilité */
+  width: 100%; /* Largeur maximale pour s'adapter à son conteneur */
+  box-sizing: border-box; /* Assure que les bordures sont inclus dans la largeur totale */
+  transition: border-color 0.3s ease; /* Animation douce pour le changement de couleur de la bordure */
+  &:focus {
+      outline: none; /* Supprime l'outline par défaut pour une apparence plus propre */
+      border-color: none; /* Change la couleur de la bordure lorsqu'il est en focus */
+  }
+  &::placeholder {
+      color: #999; /* Couleur du placeholder pour une meilleure visibilité */
+      opacity: 0; /* Assure que le placeholder est visible même si l'utilisateur a tapé quelque chose */
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.submit-btn{
+  margin-top: 10px;
+  background-color: white; /* Green */
+  border: none;
+  border-radius: 15px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+form{
+  justify-content: center;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
