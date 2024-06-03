@@ -2,6 +2,7 @@
   "name": "juju-a-faim",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://PracticeHaha.github.io/JUJUAFAIM",
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@testing-library/jest-dom": "^5.17.0",
